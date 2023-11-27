@@ -56,15 +56,15 @@ Please note that due to time constraints, I may prioritize stages 1 to 3 within 
 ## Repository Structure
 This repository is organized into sections corresponding to each project stage. Below are the sections within this repository:
 
-- **Target Identification**: This section focuses on the identification of potential drug targets for ICC using machine learning techniques.
+- **Target_Identification**: This section focuses on the identification of potential drug targets for ICC using machine learning techniques.
 
-- **Virtual Screening**: Here, I'll develop and apply computational tools for virtual screening of chemical libraries.
+- **Target_Validation**: Explore the use of machine learning in validating drug targets.
 
-- **Molecular Docking and Dynamics**: This section will delve into molecular docking and dynamics simulations for lead optimization.
+- **Virtual_Screening**: Here, I'll develop and apply computational tools for virtual screening of chemical libraries.
 
-- **Machine Learning in Drug Verification**: Explore the use of machine learning in verifying drug candidates.
+- **Molecular_Docking**: This section will delve into molecular docking and dynamics simulations for lead optimization.
 
-- **Integrated Drug Discovery**: For a comprehensive approach to drug discovery in bile duct cancers.
+- **Lead_Optimisation**: Explore the use of machine learning in optimising and verifying drug candidates.
 
 ### Useful Resources
 I'll be using various resources and tools for this project:
