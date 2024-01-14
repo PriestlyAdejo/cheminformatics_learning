@@ -1,0 +1,57 @@
+Set Up Project Structure
+
+Install and configure necessary tools (Poetry, Cookiecutter).
+Use Cookiecutter to create a basic project structure.
+Initialize a version control system (e.g., Git).
+Prepare Data Acquisition and Processing Framework
+
+Research and list potential targets from literature.
+Develop a Python class to handle data acquisition for various targets.
+Implement methods for querying databases (e.g., ChEMBL, PubChem).
+Include functionality for data cleaning and preprocessing.
+Test the class with a few targets to ensure functionality.
+Notebook Development and Integration
+
+Adapt modified talktorials into Jupyter Notebooks.
+Ensure each notebook contains:
+Clear methods and comments for different target processing.
+Visualization techniques relevant to each target.
+Code annotations linking to relevant papers.
+Defined metrics for reinforcement learning algorithm input.
+Test notebooks for a range of targets to validate their applicability.
+Generative Model Development
+
+Research and download multiple generative model codes.
+Create a separate directory in the repository for model codes.
+Test each model with a few selected targets to ensure compatibility.
+Modify and combine ideas from various papers to develop your proprietary model.
+Test the proprietary model with initial targets.
+Integrating Reinforcement Learning Algorithm
+
+Design and implement a reinforcement learning algorithm.
+Integrate the algorithm with the generative model.
+Define and code the reward system based on the metrics identified in the notebooks.
+Test the integrated system with initial targets for validation.
+Automatic Target Identification Integration
+
+(Future Task) Research and plan the integration of algorithms for automatic target identification.
+Develop a module for disease-specific target identification.
+Integrate this module with the existing generative model framework.
+Documentation and Version Control
+
+Continuously document the development process and code.
+Regularly update the repository with changes and new features.
+Ensure clear version control for tracking and collaboration purposes.
+Testing and Validation
+
+Perform thorough testing of each component (data acquisition, models, algorithms).
+Validate the entire system with multiple targets and diseases.
+Refinement and Optimization
+
+Refine the algorithms and models based on testing feedback.
+Optimize code for efficiency and scalability.
+Final Integration and Deployment
+
+Integrate all components into a cohesive system.
+Prepare the system for deployment (if applicable).
+Conduct final testing to ensure readiness.
