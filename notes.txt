@@ -1,0 +1,14 @@
+Need to run the opencadd pipeline here and modify its output files to go into the correct
+directories for /data/
+so assuming we just find the data from pdb or chembl we need to modify its save path to go to external
+after doing some processing we do things like moving to other stages and so on rather than having file save paths
+be thinbgs like 1_protein 2_ligand and so on.
+
+
+need to then parameterise evertythoing so its all in one space to be run easily. So this is like setting thinigs like
+enums or other things such as parameters to use in classes.
+
+the data directoryt itself also needs another subdirectory for model training data from MOses etc as well as all the other
+required things to make it work.
+
+reprots are where figures form the above analyses go as well as different explanabuiity metrics form the given models.

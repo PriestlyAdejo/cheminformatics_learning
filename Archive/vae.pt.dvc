@@ -1,0 +1,5 @@
+outs:
+- md5: f079655dcf51fcae4a00a7cd168db2b2
+  size: 172425014
+  hash: md5
+  path: vae.pt

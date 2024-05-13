@@ -1,0 +1,414 @@
+.
+├── binding_data.py
+├── cadd_lead_optimisation
+│   ├── cadd_pipeline_own.py
+│   ├── data
+│   │   └── Outputs
+│   │       └── Project_FGFR_2_PDB_6ADG
+│   │           └── GENERATED_SMILES_0
+│   │               ├── 0_INPUT_SPECS_DATA
+│   │               │   └── Project_FGFR_2_PDB_6ADG_GENERATED_SMILES_0_INPUT_SPECS_DATA.csv
+│   │               ├── 1_Protein
+│   │               │   └── protein
+│   │               │       └── PDB_6ADG
+│   │               │           └── 6ADG.pdb
+│   │               ├── 2_Ligand
+│   │               │   ├── CID_0_1.pdb
+│   │               │   ├── CID_0_2.pdb
+│   │               │   ├── CID_0_3.pdb
+│   │               │   ├── CID_0_4.pdb
+│   │               │   ├── CID_0_5.pdb
+│   │               │   ├── DOCKING_RESULTS_SUMMARY_WITH_PDB_PROTEIN_6ADG.csv
+│   │               │   ├── ligand
+│   │               │   │   └── CID_0
+│   │               │   │       ├── CID_0_docking_poses_log.txt
+│   │               │   │       ├── CID_0_docking_poses.pdbqt
+│   │               │   │       ├── CID_0.pdbqt
+│   │               │   │       ├── CONCAT_DF_CID_0.csv
+│   │               │   │       ├── IMAGE_CID_0.png
+│   │               │   │       ├── ORIGINAL_DF_CID_0.csv
+│   │               │   │       └── poses
+│   │               │   │           ├── pose_1
+│   │               │   │           │   └── CID_0_docking_poses_1.pdbqt
+│   │               │   │           ├── pose_2
+│   │               │   │           │   └── CID_0_docking_poses_2.pdbqt
+│   │               │   │           ├── pose_3
+│   │               │   │           │   └── CID_0_docking_poses_3.pdbqt
+│   │               │   │           ├── pose_4
+│   │               │   │           │   └── CID_0_docking_poses_4.pdbqt
+│   │               │   │           └── pose_5
+│   │               │   │               └── CID_0_docking_poses_5.pdbqt
+│   │               │   └── protein
+│   │               │       └── PDB_6ADG
+│   │               │           ├── 6ADG_extracted_protein.pdb
+│   │               │           └── 6ADG_extracted_protein_ready_for_docking.pdbqt
+│   │               ├── 3_Binding Site Detection
+│   │               │   └── binding_site
+│   │               │       ├── pocket_P_0
+│   │               │       │   ├── P_0.ccp4
+│   │               │       │   ├── P_0.pdb
+│   │               │       │   ├── subpocket_0
+│   │               │       │   │   ├── P_0_0.ccp4
+│   │               │       │   │   └── P_0_0.pdb
+│   │               │       │   ├── subpocket_1
+│   │               │       │   │   ├── P_0_1.ccp4
+│   │               │       │   │   └── P_0_1.pdb
+│   │               │       │   ├── subpocket_2
+│   │               │       │   │   ├── P_0_2.ccp4
+│   │               │       │   │   └── P_0_2.pdb
+│   │               │       │   ├── subpocket_3
+│   │               │       │   │   ├── P_0_3.ccp4
+│   │               │       │   │   └── P_0_3.pdb
+│   │               │       │   └── subpocket_4
+│   │               │       │       ├── P_0_4.ccp4
+│   │               │       │       └── P_0_4.pdb
+│   │               │       ├── pocket_P_1
+│   │               │       │   ├── P_1.ccp4
+│   │               │       │   ├── P_1.pdb
+│   │               │       │   ├── subpocket_0
+│   │               │       │   │   ├── P_1_0.ccp4
+│   │               │       │   │   └── P_1_0.pdb
+│   │               │       │   ├── subpocket_1
+│   │               │       │   │   ├── P_1_1.ccp4
+│   │               │       │   │   └── P_1_1.pdb
+│   │               │       │   ├── subpocket_2
+│   │               │       │   │   ├── P_1_2.ccp4
+│   │               │       │   │   └── P_1_2.pdb
+│   │               │       │   ├── subpocket_3
+│   │               │       │   │   ├── P_1_3.ccp4
+│   │               │       │   │   └── P_1_3.pdb
+│   │               │       │   └── subpocket_4
+│   │               │       │       ├── P_1_4.ccp4
+│   │               │       │       └── P_1_4.pdb
+│   │               │       ├── pocket_P_10
+│   │               │       │   ├── P_10.ccp4
+│   │               │       │   └── P_10.pdb
+│   │               │       ├── pocket_P_11
+│   │               │       │   ├── P_11.ccp4
+│   │               │       │   └── P_11.pdb
+│   │               │       ├── pocket_P_2
+│   │               │       │   ├── P_2.ccp4
+│   │               │       │   ├── P_2.pdb
+│   │               │       │   ├── subpocket_0
+│   │               │       │   │   ├── P_2_0.ccp4
+│   │               │       │   │   └── P_2_0.pdb
+│   │               │       │   └── subpocket_1
+│   │               │       │       ├── P_2_1.ccp4
+│   │               │       │       └── P_2_1.pdb
+│   │               │       ├── pocket_P_3
+│   │               │       │   ├── P_3.ccp4
+│   │               │       │   ├── P_3.pdb
+│   │               │       │   ├── subpocket_0
+│   │               │       │   │   ├── P_3_0.ccp4
+│   │               │       │   │   └── P_3_0.pdb
+│   │               │       │   └── subpocket_1
+│   │               │       │       ├── P_3_1.ccp4
+│   │               │       │       └── P_3_1.pdb
+│   │               │       ├── pocket_P_4
+│   │               │       │   ├── P_4.ccp4
+│   │               │       │   └── P_4.pdb
+│   │               │       ├── pocket_P_5
+│   │               │       │   ├── P_5.ccp4
+│   │               │       │   └── P_5.pdb
+│   │               │       ├── pocket_P_6
+│   │               │       │   ├── P_6.ccp4
+│   │               │       │   └── P_6.pdb
+│   │               │       ├── pocket_P_7
+│   │               │       │   ├── P_7.ccp4
+│   │               │       │   ├── P_7.pdb
+│   │               │       │   ├── subpocket_0
+│   │               │       │   │   ├── P_7_0.ccp4
+│   │               │       │   │   └── P_7_0.pdb
+│   │               │       │   └── subpocket_1
+│   │               │       │       ├── P_7_1.ccp4
+│   │               │       │       └── P_7_1.pdb
+│   │               │       ├── pocket_P_8
+│   │               │       │   ├── P_8.ccp4
+│   │               │       │   └── P_8.pdb
+│   │               │       └── pocket_P_9
+│   │               │           ├── P_9.ccp4
+│   │               │           └── P_9.pdb
+│   │               ├── 4_Ligand Similarity Search
+│   │               │   ├── analogs_all.csv
+│   │               │   └── ligand
+│   │               │       ├── CID_112713462
+│   │               │       │   ├── CONCAT_DF_CID_112713462.csv
+│   │               │       │   ├── IMAGE_CID_112713462.png
+│   │               │       │   └── ORIGINAL_DF_CID_112713462.csv
+│   │               │       └── CID_164079440
+│   │               │           ├── CONCAT_DF_CID_164079440.csv
+│   │               │           ├── IMAGE_CID_164079440.png
+│   │               │           └── ORIGINAL_DF_CID_164079440.csv
+│   │               ├── 5_Docking
+│   │               │   ├── DOCKING_RESULTS_SUMMARY_WITH_PDB_PROTEIN_6ADG.csv
+│   │               │   ├── ligand
+│   │               │   │   ├── CID_112713462
+│   │               │   │   │   ├── CID_112713462_docking_poses_log.txt
+│   │               │   │   │   ├── CID_112713462_docking_poses.pdbqt
+│   │               │   │   │   ├── CID_112713462.pdbqt
+│   │               │   │   │   └── poses
+│   │               │   │   │       ├── pose_1
+│   │               │   │   │       │   └── CID_112713462_docking_poses_1.pdbqt
+│   │               │   │   │       ├── pose_2
+│   │               │   │   │       │   └── CID_112713462_docking_poses_2.pdbqt
+│   │               │   │   │       ├── pose_3
+│   │               │   │   │       │   └── CID_112713462_docking_poses_3.pdbqt
+│   │               │   │   │       ├── pose_4
+│   │               │   │   │       │   └── CID_112713462_docking_poses_4.pdbqt
+│   │               │   │   │       └── pose_5
+│   │               │   │   │           └── CID_112713462_docking_poses_5.pdbqt
+│   │               │   │   └── CID_164079440
+│   │               │   │       ├── CID_164079440_docking_poses_log.txt
+│   │               │   │       ├── CID_164079440_docking_poses.pdbqt
+│   │               │   │       ├── CID_164079440.pdbqt
+│   │               │   │       └── poses
+│   │               │   │           ├── pose_1
+│   │               │   │           │   └── CID_164079440_docking_poses_1.pdbqt
+│   │               │   │           ├── pose_2
+│   │               │   │           │   └── CID_164079440_docking_poses_2.pdbqt
+│   │               │   │           ├── pose_3
+│   │               │   │           │   └── CID_164079440_docking_poses_3.pdbqt
+│   │               │   │           ├── pose_4
+│   │               │   │           │   └── CID_164079440_docking_poses_4.pdbqt
+│   │               │   │           └── pose_5
+│   │               │   │               └── CID_164079440_docking_poses_5.pdbqt
+│   │               │   └── protein
+│   │               │       └── PDB_6ADG
+│   │               │           ├── 6ADG_extracted_protein.pdb
+│   │               │           └── 6ADG_extracted_protein_ready_for_docking.pdbqt
+│   │               ├── 6_Interaction Analysis
+│   │               │   ├── CID_112713462_1.pdb
+│   │               │   ├── CID_112713462_2.pdb
+│   │               │   ├── CID_112713462_3.pdb
+│   │               │   ├── CID_112713462_4.pdb
+│   │               │   ├── CID_112713462_5.pdb
+│   │               │   ├── CID_164079440_1.pdb
+│   │               │   ├── CID_164079440_2.pdb
+│   │               │   ├── CID_164079440_3.pdb
+│   │               │   ├── CID_164079440_4.pdb
+│   │               │   ├── CID_164079440_5.pdb
+│   │               │   └── interaction_affinity_correlation.png
+│   │               ├── 7_Visualizations
+│   │               └── 8_Optimized Ligands
+│   ├── generated_smiles_data.csv
+│   ├── __init__.py
+│   ├── InputData_Template.csv
+│   ├── readme_for_references_and_theory_of_pipeline.md
+│   └── utils
+│       ├── binding_site_detection.py
+│       ├── consts.py
+│       ├── database_id_mapping.py
+│       ├── docking.py
+│       ├── frozen_data.py
+│       ├── helpers
+│       │   ├── dogsitescorer.py
+│       │   ├── io.py
+│       │   ├── nglview.py
+│       │   ├── obabel.py
+│       │   ├── pdb.py
+│       │   ├── plip.py
+│       │   ├── pubchem.py
+│       │   ├── __pycache__
+│       │   │   ├── dogsitescorer.cpython-38.pyc
+│       │   │   ├── dogsitescorer.cpython-39.pyc
+│       │   │   ├── io.cpython-38.pyc
+│       │   │   ├── io.cpython-39.pyc
+│       │   │   ├── nglview.cpython-38.pyc
+│       │   │   ├── nglview.cpython-39.pyc
+│       │   │   ├── obabel.cpython-38.pyc
+│       │   │   ├── obabel.cpython-39.pyc
+│       │   │   ├── pdb.cpython-38.pyc
+│       │   │   ├── pdb.cpython-39.pyc
+│       │   │   ├── plip.cpython-38.pyc
+│       │   │   ├── plip.cpython-39.pyc
+│       │   │   ├── pubchem.cpython-38.pyc
+│       │   │   ├── pubchem.cpython-39.pyc
+│       │   │   ├── rdkit.cpython-38.pyc
+│       │   │   ├── rdkit.cpython-39.pyc
+│       │   │   ├── smina.cpython-38.pyc
+│       │   │   └── smina.cpython-39.pyc
+│       │   ├── rdkit.py
+│       │   └── smina.py
+│       ├── __init__.py
+│       ├── interaction_analysis.py
+│       ├── lead_optimization_pipeline.py
+│       ├── ligand.py
+│       ├── ligand_similarity_search.py
+│       ├── optimized_ligands.py
+│       ├── protein.py
+│       ├── __pycache__
+│       │   ├── binding_site_detection.cpython-39.pyc
+│       │   ├── consts.cpython-39.pyc
+│       │   ├── database_id_mapping.cpython-39.pyc
+│       │   ├── docking.cpython-39.pyc
+│       │   ├── frozen_data.cpython-39.pyc
+│       │   ├── __init__.cpython-39.pyc
+│       │   ├── interaction_analysis.cpython-39.pyc
+│       │   ├── lead_optimization_pipeline.cpython-39.pyc
+│       │   ├── ligand.cpython-39.pyc
+│       │   ├── ligand_similarity_search.cpython-39.pyc
+│       │   ├── optimized_ligands.cpython-39.pyc
+│       │   ├── protein.cpython-39.pyc
+│       │   └── specs.cpython-39.pyc
+│       └── specs.py
+├── checkpoints
+│   ├── binding_affinity_kiba_fold_3.ckpt
+│   ├── checkpoint_kiba_1.ckpt
+│   ├── checkpoint_kiba_3.ckpt
+│   └── conditional_vae.pt
+├── data
+│   ├── davis
+│   │   ├── folds
+│   │   │   ├── test_fold_setting1.txt
+│   │   │   └── train_fold_setting1.txt
+│   │   ├── full.csv
+│   │   ├── ligand_to_ecfp.pkl
+│   │   ├── ligand_to_graph.pkl
+│   │   ├── prot_3d_for_davis
+│   │   │   ├── AAK1.pdb
+│           └── Q9Y6M4.pdb.pt
+├── docking_poses.sdf
+├── generated_smiles_data.csv
+├── generate_ligand.py
+├── generate_specific_target.py
+├── gvp
+│   ├── atom3d.py
+│   ├── data.py
+│   ├── __init__.py
+│   ├── models.py
+│   └── __pycache__
+│       ├── __init__.cpython-39.pyc
+│       └── models.cpython-39.pyc
+├── idx_to_symbol.json
+├── ligand.pdbqt
+├── generated_ligands
+    target_id
+│   └── generation_idx
+│       ├── ligand0.pdbqt
+│       ├── ligand100.pdbqt
+├── Ligands.png
+├── logs
+│   └── lightning_logs
+│       ├── version_0
+│       │   └── hparams.yaml
+│       ├── version_1
+│       │   └── hparams.yaml
+│       ├── version_10
+│       │   ├── checkpoints
+│       │   │   └── epoch=0-step=817.ckpt
+│       │   ├── hparams.yaml
+│       │   └── metrics.csv
+│       ├── version_11
+│       │   ├── checkpoints
+│       │   │   └── epoch=0-step=817.ckpt
+│       │   ├── hparams.yaml
+│       │   └── metrics.csv
+│       ├── version_12
+│       │   └── hparams.yaml
+│       ├── version_13
+│       │   └── hparams.yaml
+│       ├── version_14
+│       │   └── hparams.yaml
+│       ├── version_15
+│       │   └── hparams.yaml
+│       ├── version_16
+│       │   ├── hparams.yaml
+│       │   └── metrics.csv
+│       ├── version_17
+│       │   └── hparams.yaml
+│       ├── version_18
+│       │   ├── checkpoints
+│       │   │   └── epoch=9-step=8170.ckpt
+│       │   ├── hparams.yaml
+│       │   └── metrics.csv
+│       ├── version_19
+│       │   ├── hparams.yaml
+│       │   └── metrics.csv
+│       ├── version_2
+│       │   └── hparams.yaml
+│       ├── version_20
+│       │   ├── hparams.yaml
+│       │   └── metrics.csv
+│       ├── version_21
+│       │   └── hparams.yaml
+│       ├── version_22
+│       │   └── hparams.yaml
+│       ├── version_23
+│       │   └── hparams.yaml
+│       ├── version_24
+│       │   ├── checkpoints
+│       │   │   └── epoch=9-step=8170.ckpt
+│       │   ├── hparams.yaml
+│       │   └── metrics.csv
+│       ├── version_25
+│       │   └── hparams.yaml
+│       ├── version_26
+│       │   ├── hparams.yaml
+│       │   └── metrics.csv
+│       ├── version_3
+│       │   ├── hparams.yaml
+│       │   └── metrics.csv
+│       ├── version_4
+│       │   ├── hparams.yaml
+│       │   └── metrics.csv
+│       ├── version_5
+│       │   ├── hparams.yaml
+│       │   └── metrics.csv
+│       ├── version_6
+│       │   ├── hparams.yaml
+│       │   └── metrics.csv
+│       ├── version_7
+│       │   ├── hparams.yaml
+│       │   └── metrics.csv
+│       ├── version_8
+│       │   └── hparams.yaml
+│       └── version_9
+│           └── hparams.yaml
+├── models
+│   ├── conditional_vae.py
+│   ├── protein_model.py
+│   └── __pycache__
+│       ├── conditional_vae.cpython-39.pyc
+│       └── protein_model.cpython-39.pyc
+├── oracle
+│   └── fpscores.pkl
+├── output.txt
+├── outs
+├── P00533.pdb
+├── P00533.pdbqt
+├── plots
+│   ├── kiba_fold_1.pdf
+│   └── kiba_fold_3.pdf
+├── PMN.png
+├── process_protein_3d.py
+├── __pycache__
+│   └── binding_data.cpython-39.pyc
+├── readme_for_molecule_gen_and_binding_affin.md
+├── symbol_to_idx.json
+├── train_binding_affinity.py
+├── train_generate_specific_target.py
+├── train_vae.py
+├── utils
+│   ├── chem_evaluator.py
+│   ├── database_id_mapping.py
+│   ├── data_utils.py
+│   ├── fpscores.pkl.gz
+│   ├── metrics.py
+│   ├── mol_utils.py
+│   ├── protein_utils.py
+│   ├── __pycache__
+│   │   ├── chem_evaluator.cpython-39.pyc
+│   │   ├── database_id_mapping.cpython-39.pyc
+│   │   ├── data_utils.cpython-39.pyc
+│   │   ├── metrics.cpython-39.pyc
+│   │   ├── mol_utils.cpython-39.pyc
+│   │   ├── protein_utils.cpython-39.pyc
+│   │   ├── sascorer.cpython-39.pyc
+│   │   └── transform.cpython-39.pyc
+│   ├── sascorer.py
+│   └── transform.py
+├── vae.pt
+├── zinc250k.csv
+└── zinc250k.smi
+
+134 directories, 1685 files
