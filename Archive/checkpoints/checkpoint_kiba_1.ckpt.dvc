@@ -1,0 +1,5 @@
+outs:
+- md5: 6915ec91cb284175c64199a69284cfce
+  size: 88078264
+  hash: md5
+  path: checkpoint_kiba_1.ckpt
