@@ -1,0 +1,5 @@
+outs:
+- md5: ac13249e61cb21e68544e7adfb09fc26
+  size: 88078264
+  hash: md5
+  path: binding_affinity_kiba_fold_3.ckpt
