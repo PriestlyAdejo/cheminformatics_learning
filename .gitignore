@@ -107,3 +107,4 @@ target/
 ./Archive/checkpoints/binding_affinity_kiba_fold_3.ckpt
 ./Archive/checkpoints/conditional_vae_1.pt
 ./Archive/checkpoints/binding_affinity_kiba_fold_0-v1.ckpt
+./Archive/checkpoints/checkpoint_kiba_1.ckpt
