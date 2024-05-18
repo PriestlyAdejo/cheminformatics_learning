@@ -110,3 +110,12 @@ target/
 ./Archive/checkpoints/binding_affinity_kiba_fold_0-v1.ckpt
 ./Archive/checkpoints/checkpoint_kiba_1.ckpt
 ./Archive/checkpoints/binding_affinity_kiba_fold_0.ckpt
+Archive/AutoDock-GPU/.git/objects/pack/pack-02b0ef99beb9c8b30ab0bdf38aefc1e9fa122747.pack
+Archive/vae.pt
+Archive/checkpoints/conditional_vae.pt
+Archive/checkpoints/checkpoint_kiba_3.ckpt
+Archive/checkpoints/binding_affinity_kiba_fold_3.ckpt
+Archive/checkpoints/conditional_vae_1.pt
+Archive/checkpoints/binding_affinity_kiba_fold_0-v1.ckpt
+Archive/checkpoints/checkpoint_kiba_1.ckpt
+Archive/checkpoints/binding_affinity_kiba_fold_0.ckpt
